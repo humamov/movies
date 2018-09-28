@@ -1,0 +1,98 @@
+.movie-card{
+    transition: .4s ease-in-out;
+    position: relative;
+    box-sizing: border-box;
+}
+.movie-card:hover{
+    cursor: pointer;
+}
+.movie-card .card-top{
+    position: relative !important;
+    transition: .4s ease-in-out;
+    overflow: hidden;
+}
+.card-top::after{
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+    z-index: 2;
+    transform: translateX(100%);
+    transition: .3s ease-out;
+    transition-delay: .1s
+    
+}
+.card-top::before{
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--red);
+    z-index: 1;
+    transform: translateX(100%);
+    transition: .3s ease-out;
+    
+}
+.card-top:hover:after{
+    transform: translateX(0);
+}
+.card-top:hover:before{
+    transform: translateX(0);  
+}
+.card-top .like-button{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    color: #fff;
+    opacity: 0;
+    transition: .4s ease-in-out;
+   
+}
+.movie-card:hover .like-button{
+    transform: translate(-50%,-50%);
+    color: #fff;
+    opacity: 1;
+    transition-delay: .4s
+    
+}
+.movie-card .card-top >img{
+    width: 100%;
+    height: 350px;
+}
+.card-top > .card-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;height: 100%;
+    line-height: 50px;
+}
+
+.rating{
+    display: block;
+    letter-spacing: 4px
+}
+.rating > span{
+    color: coral;
+    font-size: 16px !important;
+    font-weight: 600;
+    
+    
+}
+.movie-card .card-body{
+    padding: 10px
+}
+.movie-card .card-body h3{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.movie-card .card-body span{
+    font-size: 12px;
+}

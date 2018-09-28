@@ -1,0 +1,61 @@
+.filter{
+    width: 25px;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    border-right: .5px solid rgba(255, 255, 255, .3);
+    position: relative;
+    transition: .4s ease-out;
+    transition-delay: .3s;
+
+}
+.filter.expanded{
+    width: 300px;
+    transition-delay: 0s;
+}
+.filter .filter-content{
+    transition: .4s ease-in;
+    transition-delay: .2s;
+    padding: 20px 50px 20px 20px
+    
+}
+.filter:not(.expanded) .filter-content{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-300px);
+    transition: .4s ease-out;
+    transition-delay: 0s
+    
+}
+.filter--btn{
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 0;
+    right:0;
+    background: var(--red);
+    color:white;
+    letter-spacing: 10px;
+    padding: 10px 0;
+    font-family: var(--h-font);
+    cursor: pointer;
+}
+.filter .tag{
+    background-color: var(--dark);
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: .4s ease-in-out
+}
+.filter .tag:hover{
+    background: var(--red)
+}
+
+.filter-content .head{
+    border-bottom: .5px solid rgba(255, 255, 255, 0.3) ;
+    line-height: 50px;
+}
+.filter-content .tags{
+    margin-top: 30px;
+}
+.filter--keywords {
+    margin-top: 50px;
+}

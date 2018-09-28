@@ -1,0 +1,14 @@
+.app-header{
+    background: var(--black);
+    text-align: center;
+    line-height: 50px;
+    max-height: 50px;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.3)
+}
+.app-header .logo{
+    font-family: var(--h-font);
+    color: #ffffff;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    border-bottom: .5px solid hsla(0, 0%, 100%, 0.3);
+}

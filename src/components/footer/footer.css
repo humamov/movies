@@ -1,0 +1,60 @@
+.app-footer{
+    background: var(--black);
+    border-top: .5px solid rgba(255, 255, 255, .3);
+    height: 50px;
+    max-height: 50px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 0 25px;
+}
+/* user interaction */
+.user-interaction{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.user-interaction >li {
+    line-height: 50px;
+    padding: 0 20px;
+    transition: .4s ease-out;
+
+}
+.user-interaction >li:hover{
+    color: var(--red);
+    background: var(--red);
+    cursor: none;
+}
+.user-interaction li a,
+.app-social li a
+{
+    color: white;
+    letter-spacing: 4px;
+    cursor: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    
+
+}
+/* hr */
+.hr hr{
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+/* app social */
+.app-social{
+    display: flex;
+    align-items: center
+}
+.app-social li{
+    line-height: 50px;
+    padding: 0 20px;
+    transition: .4s ease-out;
+}
+.app-social li:hover{
+    color: var(--red);
+    background: var(--red);
+    cursor: none;
+}

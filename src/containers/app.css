@@ -1,0 +1,9 @@
+#App{
+    display: grid;
+    width: calc(100vw - 15px);
+    height: 100vh;
+    max-height: 100vh;
+    background:#eee;
+    grid-template-rows: auto 1fr auto;
+    box-sizing: content-box;
+}

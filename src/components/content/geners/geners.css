@@ -1,0 +1,46 @@
+.geners{
+    width: 25px;
+    border-left: .5px solid rgba(255, 255, 255, .3);
+    position: relative;
+    transition: .4s ease-out;
+    transition-delay: .2s 
+}
+.geners.expanded{
+    width: 200px;
+    transition-delay: 0s;
+}
+.geners--btn{
+    writing-mode: vertical-lr;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background: var(--red);
+    color:white;
+    letter-spacing: 10px;
+    padding: 10px 0;
+    font-family: var(--h-font);
+    cursor: pointer;
+}
+.geners .geners--list{
+    margin-top: 20px;
+    overflow-y: scroll ;
+    max-height: calc(100vh - 150px);
+    transition: .4s ease-in-out
+}
+.geners:not(.expanded) .geners--list{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(300px);
+}
+.geners--item{
+    line-height: 50px;
+    padding-left: 50px;
+    font-size: 14px;
+    transition: .4s ease-out;
+    word-break: keep-all;
+    
+}
+.geners--item:hover{
+   color: var(--red);
+   cursor: pointer;
+}
