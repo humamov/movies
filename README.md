@@ -1,4 +1,4 @@
-Preview: https://test-886ec.firebaseapp.com/This
+Preview: https://test-886ec.firebaseapp.com/
 
 project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
